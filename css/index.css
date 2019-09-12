@@ -254,7 +254,7 @@ header .navlinks a:hover {
   justify-content: space-between;
   width: 100vw;
   padding-right: 40%;
-  padding-left: 30%;
+  padding-left: 28%;
   padding-bottom: 2vh;
 }
 .midsection .skillslanguages .skills {
@@ -262,6 +262,7 @@ header .navlinks a:hover {
   flex-direction: column;
   flex-wrap: wrap;
   padding-bottom: 3vh;
+  border-right: 1px solid firebrick;
 }
 .midsection .skillslanguages .skills li {
   margin-left: 10%;
@@ -286,6 +287,7 @@ header .navlinks a:hover {
   }
   .midsection .skillslanguages .skills {
     padding-bottom: 3vh;
+    border: 0;
   }
   .midsection .skillslanguages .languages {
     display: flex;
