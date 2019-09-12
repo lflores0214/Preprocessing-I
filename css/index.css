@@ -211,6 +211,10 @@ header .navlinks a {
   font-family: "Heebo", sans-serif;
   font-size: 1.4rem;
 }
+header .navlinks a:hover {
+  color: #d37070;
+  text-decoration: underline;
+}
 .topsection {
   display: flex;
   flex-direction: column;
@@ -223,6 +227,8 @@ header .navlinks a {
   flex-direction: column;
   flex-wrap: wrap;
   text-align: center;
+  border-bottom: 1.5px solid firebrick;
+  padding-bottom: 3vh;
 }
 .topsection .myinfo h1 {
   margin-bottom: 3vh;
@@ -341,6 +347,12 @@ header .navlinks a {
   text-decoration-color: indianred;
   text-decoration-style: double;
 }
+@media screen and (max-width: 500px) {
+  .bottomsection .position {
+    text-decoration: underline;
+    text-decoration-color: indianred;
+  }
+}
 footer div nav {
   display: flex;
   flex-direction: row;
@@ -352,4 +364,9 @@ footer div nav {
 footer div nav a {
   color: crimson;
   text-decoration: none;
+  margin-top: 1vh;
+}
+footer div nav a:hover {
+  color: #d37070;
+  text-decoration: underline;
 }

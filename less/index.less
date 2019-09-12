@@ -183,6 +183,11 @@ header{
 		margin-bottom: @bottomspacing;
 		.navstyle();
 		.navfont();
+
+		&:hover{
+			color:lighten(@headcolor,5%);
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -199,6 +204,8 @@ header{
 	.myinfo{
 		.displaycolumn();
 		text-align: center;
+		border-bottom: 1.5px solid firebrick;
+		padding-bottom: @bottomspacing;
 
 		h1{
 			margin-bottom: @bottomspacing;
@@ -331,8 +338,15 @@ header{
 			.titledecoration();
 		}
 	}
-
+	@media screen and (max-width:500px){
+		
+		.position{
+			text-decoration: underline;
+			text-decoration-color: @headcolor;
+		}
 	}
+
+}
 
 
 footer{
@@ -344,11 +358,15 @@ footer{
 			
 			a{
 				.navstyle();
+				margin-top:1vh;
+
+				&:hover{
+					color:lighten(@headcolor,5%);
+					text-decoration:underline;
+				}
 			}
 		}
 	}
 }
 
-
-//media query to change the body width
 
