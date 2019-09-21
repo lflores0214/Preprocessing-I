@@ -1,1 +1,374 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Heebo'), local('Heebo-Regular'), url(https://fonts.gstatic.com/s/heebo/v5/NGS6v5_NC0k9P9H2TbQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans Narrow';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('PT Sans Narrow'), local('PTSans-Narrow'), url(https://fonts.gstatic.com/s/ptsansnarrow/v11/BngRUXNadjH0qYEzV7ab-oWlsbCGwRg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Serif Caption';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('PT Serif Caption'), local('PTSerif-Caption'), url(https://fonts.gstatic.com/s/ptserifcaption/v11/ieVl2ZhbGCW-JoW6S34pSDpqYKU019K7CA.ttf) format('truetype');
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1;
+  background-color: floralwhite;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  border: 1px solid blue;
+  padding: 2%;
+  max-width: 100%;
+  margin: 2%;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+h1 {
+  font-size: 2.2rem;
+  color: firebrick;
+}
+h3,
+h4 {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 2rem;
+  color: indianred;
+}
+p,
+ul,
+li {
+  font-family: "PT Serif Caption", serif;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+@media screen and (max-width: 500px) {
+  html,
+  body {
+    width: 90vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+}
+header nav div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+header .navlinks a {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: center;
+  font-size: 1.6rem;
+  margin-top: 1%;
+  margin-bottom: 3vh;
+  color: crimson;
+  text-decoration: none;
+  font-family: "Heebo", sans-serif;
+  font-size: 1.4rem;
+}
+header .navlinks a:hover {
+  color: #d37070;
+  text-decoration: underline;
+}
+.topsection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.topsection .myinfo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  border-bottom: 1.5px solid firebrick;
+  padding-bottom: 3vh;
+}
+.topsection .myinfo h1 {
+  margin-bottom: 3vh;
+}
+.midsection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 5vh;
+}
+.midsection .summary {
+  text-align: justify;
+  padding-bottom: 3vh;
+}
+.midsection .summary h3 {
+  text-align: center;
+}
+.midsection .skillslanguages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100vw;
+  padding-right: 40%;
+  padding-left: 28%;
+  padding-bottom: 2vh;
+}
+.midsection .skillslanguages .skills {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 3vh;
+  border-right: 1px solid firebrick;
+}
+.midsection .skillslanguages .skills li {
+  margin-left: 10%;
+}
+.midsection .skillslanguages .languages {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.midsection .skillslanguages .languages li {
+  margin-left: 50%;
+}
+@media (max-width: 500px) {
+  .midsection .skillslanguages {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 25%;
+    padding-right: 5%;
+  }
+  .midsection .skillslanguages .skills {
+    padding-bottom: 3vh;
+    border: 0;
+  }
+  .midsection .skillslanguages .languages {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .midsection .skillslanguages .languages h3 {
+    text-align: center;
+  }
+  .midsection .skillslanguages .languages li {
+    margin-left: 30%;
+  }
+}
+.bottomsection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.bottomsection .workhistory h3 {
+  text-align: center;
+}
+.bottomsection .workhistory li {
+  padding-bottom: 3vh;
+}
+.bottomsection .workhistory {
+  text-align: justify;
+  padding-bottom: 3vh;
+}
+.bottomsection .workhistory .title {
+  text-decoration: underline;
+  text-decoration-color: indianred;
+  text-decoration-style: double;
+}
+.bottomsection .education h3 {
+  text-align: center;
+}
+.bottomsection .education ul {
+  padding-left: 1vw;
+}
+.bottomsection .education {
+  text-align: justify;
+  padding-bottom: 3vh;
+}
+.bottomsection .education .title {
+  text-decoration: underline;
+  text-decoration-color: indianred;
+  text-decoration-style: double;
+}
+.bottomsection .contactinfo h3 {
+  text-align: center;
+}
+.bottomsection .contactinfo {
+  text-align: justify;
+  padding-bottom: 3vh;
+}
+.bottomsection .contactinfo .title {
+  text-decoration: underline;
+  text-decoration-color: indianred;
+  text-decoration-style: double;
+}
+@media screen and (max-width: 500px) {
+  .bottomsection .position {
+    text-decoration: underline;
+    text-decoration-color: indianred;
+  }
+}
+footer div nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: "Heebo", sans-serif;
+  font-size: 1.4rem;
+}
+footer div nav a {
+  color: crimson;
+  text-decoration: none;
+  margin-top: 1vh;
+}
+footer div nav a:hover {
+  color: #d37070;
+  text-decoration: underline;
+}
